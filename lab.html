@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halal by Flimty - Laboratorium</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="asset/image/logo/favicon.ico" type="image/x-icon">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="asset/css/style.css" />
+
+    <style>
+        .hero .container h1{
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+section {
+  min-height: 80vh;
+  padding: 5em 10%;
+}
+
+section:nth-of-type(1) {
+  background-color: #371445;
+  height: 20vh;
+}
+
+.wave-1 {
+  background-image: url("../image/wave-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  background: #371445;
+  height: 90vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.3s;
+}
+.glass-card:hover {
+  transform: translateY(-10px);
+}
+
+#layanan {
+  color: #19aa4b;
+}
+
+#layanan .text-muted {
+  color: #371445 !important;
+  font-weight: bold;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Keyframes for the glowing effect */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.4),
+      0 0 8px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  to {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.9),
+      0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+}
+
+.btn-custom {
+  background-color: #19aa4b;
+  color: white;
+  border: none;
+  width: 200px;
+}
+
+.btn-custom:hover {
+  background-color: #148a3d;
+}
+
+.btn-outline-primary {
+  color: #19aa4b;
+  border-color: #19aa4b;
+}
+
+.btn-outline-primary:hover {
+  background-color: #19aa4b;
+  color: white;
+}
+
+/*CTA Section*/
+.cta-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-accent2-bg {
+  width: 100%;
+  gap: 24px;
+  display: flex;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(1deg) skew(0deg, 0deg);
+  align-self: stretch;
+  transition: 0.3s;
+  align-items: center;
+  border-radius: 0;
+  justify-content: center;
+  transform-style: preserve-3d;
+  background-color: var(--dl-color-theme-accent2);
+}
+
+.cta-accent2-bg:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.cta-accent1-bg {
+  width: 100%;
+  display: flex;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(-2deg) skew(0deg, 0deg);
+  align-items: center;
+  border-radius: 0;
+  justify-content: center;
+  transform-style: preserve-3d;
+  background-color: var(--dl-color-theme-accent1);
+}
+
+.cta-container2 {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px;
+  gap: 48px;
+  display: flex;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(1deg) skew(0deg, 0deg);
+  transition: 0.3s;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-container2:hover {
+  color: white;
+  background-color: black;
+}
+
+.cta-content {
+  gap: 24px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.cta-actions {
+  gap: 10px;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.cta-button {
+  font-size: 1.25rem;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: #19aa4b;
+  color: white;
+  transition: background-color 0.3s ease;
+  width: 300px;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: #371445;
+}
+
+@media (max-width: 200px) {
+  .cta-container2 {
+    gap: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 991px) {
+  .cta-actions {
+    flex-wrap: wrap;
+    align-self: stretch;
+    justify-content: center;
+  }
+  .cta-button {
+    flex: 1;
+  }
+}
+    </style>
+</head>
+<body>
+    <!--NAVBAR starts-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid pt-3 pb-2">
+            <!--LOGO-->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="asset/image/logo/logo1.png" alt="FlimtyHalal" width="60" height="60">
+                <img src="asset/image/logo/logo2.png" alt="FlimtyHalal2" width="250">
+            </a>
+            <!--TOGGLER BUTTON-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--NAV ITEMS-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="beranda.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tentang Kami </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tentang-kami.html#header-kami">Tentang Kami</a></li>
+                            <li><a class="dropdown-item" href="tentang-kami.html#visi-dan-misi">Visi dan Misi</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="tentang-kami.html#sejarah">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="tentang-kami.html#direktur">Direktur</a></li>
+                            <li><a class="dropdown-item" href="tentang-kami.html#auditor">Profil Auditor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="layanan.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="berita.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="regulasi.html">Regulasi</a>
+                    </li>
+                </ul>
+                <!--SEARCH FORM-->
+                <form class="d-flex pe-2">
+                    <a href="kontak-kami.html" class="btn-nav me-2">Kontak Kami</a>
+                    <a href="masuk.html" class="btn-nav" id="masuk-daftar">Masuk/Daftar</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--NAVBAR ends-->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+        <h1 class="fw-bold">Mitra Anda dalam Kehalalan Produk</h1>
+        <p class="lead">
+            Laboratorium LPPOM MUI dengan Peralatan Mutakhir dan Akreditasi
+            Internasional
+        </p>
+        <a href="#layanan" class="button-1 mt-3">Lihat Layanan</a>
+        </div>
+    </section>
+
+    <!-- Layanan Utama -->
+    <section id="layanan" class="py-5 bg-light wave-1">
+        <div class="container text-center">
+        <h2 class="mb-4 fw-bold">Laboratorium LPPOM MUI</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+            <div class="glass-card">
+                <i class="bi bi-graph-up-arrow fs-1 mb-3"></i>
+                <h5>Fisika & Kimia</h5>
+                <p class="text-muted">
+                Uji Properti Fisik, Organoleptik, Nutrisi, dan Bahan Kimia
+                Produk.
+                </p>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="glass-card">
+                <i class="bi bi-bug-fill fs-1 mb-3"></i>
+                <h5>Mikrobiologi</h5>
+                <p class="text-muted">
+                Analisis Bakteri, Kapang, dan Cemaran Lingkungan Secara Cepat
+                dan Akurat.
+                </p>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="glass-card">
+                <i class="bi bi-diagram-3-fill fs-1 mb-3"></i>
+                <h5>Molekuler</h5>
+                <p class="text-muted">
+                Identifikasi DNA dan Protein untuk Keamanan Produk Anda.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-5">
+        <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+            <img
+                src="asset/image/lab1.webp"
+                class="img-fluid rounded-4"
+                alt="Laboratorium LPPOM"
+            />
+            </div>
+            <div class="col-md-6">
+            <h2 class="fw-bold">Tentang Laboratorium LPPOM MUI</h2>
+            <p class="text-muted">
+                Kami adalah laboratorium pertama di Indonesia yang terakreditasi
+                KAN untuk pengujian produk halal dengan teknologi Real-Time PCR,
+                UHPLC, ICP-MS, dan lainnya.
+            </p>
+            <a href="#kontak" class="button-1 mt-3"
+                >Hubungi Kami</a
+            >
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-wrapper">
+        <div class="thq-section-padding">
+        <div class="thq-section-max-width">
+            <div class="cta-accent2-bg">
+            <div class="cta-accent1-bg">
+                <div class="cta-container2">
+                <div class="cta-content">
+                    <h2 class="thq-heading-2">
+                    Ajukan Uji Sampel Anda Sekarang!
+                    </h2>
+                    <p class="thq-body-large">
+                    Percepat sertifikasi halal produk Anda bersama kami.
+                    </p>
+                </div>
+                <div class="cta-actions">
+                    <button type="button" class="thq-button-filled cta-button">
+                    Ajukan Sekarang
+                    </button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!--FOOTER-->
+    <footer class="footer-halal">
+        <div class="footer-container row">
+        <!-- Logo Section -->
+        <div class="footer-left col-4">
+            <img src="asset/image/logo/logo3.png" alt="Halal Logo"  width="200px">
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-contact col-4">
+            <br>
+            <h6>Contact Us</h6>
+            <p>klikflimty@gmail.com<br>0852 9889 8644</p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-social col-4">
+            <br>
+            <h6>Follow Us</h6>
+            <div class="social-icons">
+            <a href="#"><img src="asset/image/icons/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="asset/image/icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="asset/image/icons/x.png" alt="Twitter/X"></a>
+            <a href="#"><img src="asset/image/icons/tiktok.png" alt="TikTok"></a>
+            </div>
+        </div>
+        </div>
+
+        <div class="footer-bottom">
+        <strong>PT ANUGRAH INOVASI MAKMUR INDONESIA</strong><br>
+        Jalan Boulevard Raya, Cengkareng Timur, DKI Jakarta, 11730 – Indonesia
+        </div>
+    </footer>
+    <!--FOOTER-->
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Scroll Script-->
+    <script>
+        const scrollUp = () =>{
+            const scrollUp = document.getElementById('scroll-up')
+            //when the scroll is higher than 350 viewpoint height, add the show-scroll class to a tag with the scroll up class
+            this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                                : scrollUp.classList.remove('show-scroll')
+        }
+        window.addEventListener('scroll', scrollUp)
+    </script>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halal by Flimty - Tentang Kami</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="asset/image/logo/favicon.ico" type="image/x-icon">
+    <!--AOS & JS Swiper-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--CSS-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Swiper Style-->
+    <style>
+      swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: transparent !important;
+        box-shadow: none !important;
+      }
+
+      swiper-slide {
+        background: transparent !important; /* remove white */
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        box-shadow: none !important; /* remove shadow bleeding */
+      }
+
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+
+      .coverflow-img-wrapper {
+        border-radius: 15px;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+      }
+
+      swiper-container,
+      .swiper {
+        overflow: visible !important;
+      }
+
+      .swiper-slide-shadow-left,
+      .swiper-slide-shadow-right {
+        display: none !important;
+      }
+
+      .sejarah h4{
+        color: #eeeeee;
+      }
+
+
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <!--NAVBAR starts-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid pt-3 pb-2">
+          <!--LOGO-->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="asset/image/logo/logo1.png" alt="FlimtyHalal" width="60" height="60">
+              <img src="asset/image/logo/logo2.png" alt="FlimtyHalal2" width="250">
+          </a>
+          <!--TOGGLER BUTTON-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--NAV ITEMS-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="beranda.html">Beranda</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Tentang Kami </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="tentang-kami.html#header-kami">Tentang Kami</a></li>
+                          <li><a class="dropdown-item" href="tentang-kami.html#visi-dan-misi">Visi dan Misi</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="tentang-kami.html#sejarah">Sejarah</a></li>
+                          <li><a class="dropdown-item" href="tentang-kami.html#direktur">Direktur</a></li>
+                          <li><a class="dropdown-item" href="tentang-kami.html#auditor">Profil Auditor</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="layanan.html">Layanan</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="berita.html">Berita</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="regulasi.html">Regulasi</a>
+                  </li>
+              </ul>
+              <!--SEARCH FORM-->
+              <form class="d-flex pe-2">
+                  <a href="kontak-kami.html" class="btn-nav me-2">Kontak Kami</a>
+                  <a href="masuk.html" class="btn-nav" id="masuk-daftar">Masuk/Daftar</a>
+              </form>
+          </div>
+      </div>
+  </nav>
+  <!--NAVBAR ends-->
+
+    <!--HEADER start-->
+    <section class="header-tentang-kami" id="header-kami">
+    <video autoplay muted loop id="background-video">
+    <source src="asset/image/tentangkamivideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <div class="container-fluid tentang-top-text row">
+    <div class="text-tk">
+        <h4>TENTANG KAMI</h4>
+        <h5>Selamat datang di Flimty Halal Certification!</h5>
+        <p> Kami adalah bagian dari keluarga besar Flimty, brand terpercaya di bidang kesehatan dan gaya hidup sehat di Indonesia.
+        Berangkat dari komitmen kami untuk menghadirkan produk-produk terbaik, kini Flimty memperluas perannya dengan menghadirkan jasa sertifikasi halal.
+        Kami memahami bahwa kepastian halal bukan sekadar kebutuhan, tapi juga bagian dari keyakinan dan kepercayaan konsumen.
+        Dengan dukungan tim profesional, proses yang cepat, serta kepatuhan penuh terhadap standar nasional dan internasional, Flimty Halal Certification hadir untuk membantu perusahaan Anda mendapatkan sertifikasi halal dengan mudah, aman, dan terpercaya.
+        </p> 
+        <h5 data-aos="fade-down">
+        Kami percaya: <br>
+        <b>Halal adalah standar, bukan pilihan.</b>
+        </h5>   
+    </div>
+
+    </div>
+    </section>
+    <!--HEADER ends-->
+
+    <!--VISI dan MISI start-->
+    <section class="visi-dan-misi" id="visi-dan-misi">
+        <div class="visi-misi-wrapper">
+          <div class="visi" data-aos="fade-left">
+            <h5>Visi</h5>
+            <p>Menjadi lembaga sertifikasi halal terpercaya yang memperkuat industri halal nasional dan mendukung kepercayaan konsumen global.</p>
+          </div>
+          <div class="misi" data-aos="fade-right">
+            <h5>Misi</h5>
+            <ul>
+              <li>Memberikan layanan sertifikasi halal yang profesional, cepat, dan transparan.</li>
+              <li>Membantu pelaku usaha dalam memenuhi regulasi halal secara mudah dan efisien.</li>
+              <li>Menjaga integritas dan kepercayaan publik terhadap standar halal di semua sektor industri.</li>
+              <li>Terus berinovasi dalam pelayanan untuk mendukung pertumbuhan ekosistem produk halal di Indonesia dan dunia.</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <!--VISI dan MISI end-->
+
+    <!--MENU start-->
+    <section class="menu-kami">
+        <div class="card-button-container">
+          <a href="#sejarah" class="card-button">
+            <img src="asset/image/icons/history.png" alt="Sejarah">
+            <h5>Sejarah</h5>
+          </a>
+      
+          <a href="#direktur" class="card-button">
+            <img src="asset/image/icons/bod.png" alt="Direktur">
+            <h5>Direktur</h5>
+          </a>
+      
+          <a href="#auditor" class="card-button">
+            <img src="asset/image/icons/audit.png" alt="Auditor">
+            <h5>Auditor</h5>
+          </a>
+        </div>
+    </section>
+    <!--MENU end-->
+    <div class="image-divider">
+      <img src="asset/image/wavesOpacity.svg" alt="divider" width="100%">
+    </div>
+
+    <!--SEJARAH start-->
+    <section id="sejarah" class="sejarah">
+        <h2 data-aos="zoom-in-up">Sejarah Flimty</h2>
+        <div class="timeline">
+            <ul>
+              <li>
+                <div class="content" data-aos="fade-right">
+                  <h3>Flimty Didirikan</h3>
+                  <p>Flimty didirikan pada tahun 2018 oleh PT. Anugrah Inovasi Makmur Indonesia. Produk pertama yang diluncurkan adalah Flimty Fiber, sebuah minuman serat untuk detox dan membantu mengontrol berat badan, yang segera populer di kalangan konsumen yang peduli kesehatan.</p>
+                </div>
+                <div class="time" data-aos="fade-left">
+                  <h4>2018</h4>
+                </div>
+              </li>
+
+              <li>
+                <div class="content" data-aos="fade-left">
+                  <h3>Peluncuran Flimeal & Penghargaan Pertama</h3>
+                  <p>Pada 2021, Flimty meluncurkan produk Flimeal, sebuah meal replacement yang mengandung ±200 kalori. Produk ini menjadi pilihan ideal bagi mereka yang ingin menurunkan berat badan dengan defisit kalori atau mereka yang kesulitan makan sehat. Di tahun yang sama, Flimty mulai meraih penghargaan, termasuk Top Brand Award dan Top Brand Shopee.</p>
+                </div>
+                <div class="time" data-aos="fade-right">
+                  <h4>2021</h4>
+                </div>
+              </li>
+
+              <li>
+                <div class="content" data-aos="fade-right">
+                  <h3>Kolaborasi dengan Deddy Corbuzier</h3>
+                  <p>Pada 26 September 2022, Flimty berkolaborasi dengan Deddy Corbuzier, menghasilkan "Deddy Corbuzier Series". Kolaborasi ini sukses besar dan semakin meningkatkan brand awareness Flimty di pasar Indonesia, khususnya dalam kategori produk detox dan suplemen kesehatan.</p>                
+                </div>
+                <div class="time" data-aos="fade-left">
+                  <h4>2022</h4>
+                </div>
+              </li>
+
+              <li>
+                <div class="content" data-aos="fade-left">
+                  <h3>Pencapaian Besar dalam E-Commerce</h3>
+                  <p>Flimty berhasil meraih penghargaan 1st Winner of Indonesia Best Selling Brands in E-Commerce Market 2023 untuk kategori Diet Detox, serta masuk dalam Top 10 Indonesia Best Selling Brands in E-Commerce Market 2023 untuk kategori Suplemen Kecantikan. Pencapaian ini mengukuhkan posisi Flimty sebagai salah satu brand kesehatan terkemuka di Indonesia.</p>
+                </div>
+                <div class="time" data-aos="fade-right">
+                  <h4>2023</h4>
+                </div>
+              </li>
+
+              <li>
+                <div class="content" data-aos="fade-right">
+                  <h3>K Sertifikasi Halal MUI</h3>
+                  <p>Pada 2025, Flimty berhasil mendapatkan Sertifikasi Halal dari MUI (Majelis Ulama Indonesia), yang memastikan bahwa seluruh produk Flimty memenuhi standar halal untuk konsumen Muslim.</p>                
+                </div>
+                <div class="time" data-aos="fade-left">
+                  <h4>2025</h4>
+                </div>
+              </li>
+
+              <div style="clear:both;"></div>
+            </ul>
+        </div>
+    </section>
+    <!--SEJARAH end-->
+
+    <!--DIREKTUR start-->
+    <section id="direktur" style="background-color: #19AA4B;">
+        <div class="direktur-bod">
+            <h2
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            >Dewan Direksi</h2>
+            
+            <div>
+              
+              <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+                slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+                coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+                <swiper-slide style="color: transparent;">
+                  <div class="coverflow-img-wrapper">
+                    <img src="asset/image/BOD-muti.webp" />
+                  </div>
+                </swiper-slide >
+                <swiper-slide style="color: transparent;">
+                  <div class="coverflow-img-wrapper">
+                    <img src="asset/image/BOD-02.webp" />
+                  </div>
+                </swiper-slide >
+                <swiper-slide style="color: transparent;">
+                  <div class="coverflow-img-wrapper">
+                    <img src="asset/image/BOD-01.webp" />
+                  </div>
+                </swiper-slide >
+                <swiper-slide style="color: transparent;">
+                  <div class="coverflow-img-wrapper">
+                    <img src="asset/image/BOD-04.webp" />
+                  </div>
+                </swiper-slide >
+              </swiper-container>
+
+            </div>
+            <div class="personal">
+                <div class="container my-5">
+                    <div data-aos="fade-right"
+                   class="card rounded-4 shadow-lg p-4">
+                      <div class="row g-4 align-items-center">
+                        
+                        <!-- Photo -->
+                        <div class="col-md-4 text-center">
+                          <img src="asset/image/BOD-muti.webp" alt="Person Photo" class="rounded-circle border border-3 border-secondary img-fluid" style="width: 180px; height: 180px; object-fit: cover;">
+                        </div>
+                        
+                        <!-- Info -->
+                        <div class="col-md-8">
+                          <h4 class="fw-bold">Ir. Muti Arintawati, M.Si</h4>
+                          <h6 class="text-muted mb-3">Direktur Utama</h6>
+                          <p class="text-justify">
+                            Mendapatkan gelar Sarjana (S1) di Bidang Teknologi Pangan & Gizi IPB University pada 1992, Pascasarjana (S2) di Bidang Ilmu Pangan, IPB University pada 1999; sebelumnya pernah menjadi Anggota Pengurus LPPOM MUI (1998 – 2006), Kepala Bidang Sertifikasi & Sistem Jaminan Halal (SJH) (2006 – 2009), Kepala Bidang Auditing LPPOM MUI (2009 – 2010), Anggota Tim Kawasan Industri Halal Kerjasama LPPOM MUI dengan Kementerian Perindustrian (2014), Wakil Direktur LPPOM MUI (2010 – 2020), Anggota Tim Penyusunan SKKNI Penyelia Halal (2016), Anggota Tim Penyusunan SKKNI Auditor Halal (2019); aktif sebagai Auditor Halal (sejak 1994), Sekretaris Komisi Teknis di World Halal Food Council/ WHFC (sejak 2012), Anggota Komtek SNI Pangan Halal (sejak 2020), Anggota Dewan Pengarah LSP (sejak 2019); diangkat menjadi Direktur Eksekutif LPPOM MUI pada tahun 2020-2022.
+                          </p>
+                        </div>
+                  
+                      </div>
+                    </div>
+                    <div data-aos="fade-left"
+                     class="card rounded-4 shadow-lg p-4">
+                        <div class="row g-4 align-items-center">
+                          
+                         
+                             <!-- Photo -->
+                             <div class="col-md-4 text-center">
+                              <img src="asset/image/BOD-02.webp" alt="Person Photo" class="rounded-circle border border-3 border-secondary img-fluid" style="width: 180px; height: 180px; object-fit: cover;">
+                            </div>
+                          <!-- Info -->
+                          <div class="col-md-8">
+                            <h4 class="fw-bold">Ir. Sumunar Jati, M.P</h4>
+                            <h6 class="text-muted mb-3">Direktur Strategi dan Operasional</h6>
+                            <p class="text-justify">
+                                Mendapatkan gelar Sarjana (S1) Departemen Teknologi Industri Pertanian, Fakultas Teknologi Pertanian IPB University, Pascasarjana (S2) Magister Profesional Industri Kecil Menengah, IPB University; sebelumnya sebagai Wakil Direktur, membawahi bidang Halal Standard, Information and Communication Technology, Halal Laboratory, Human Capital, dan Corporate Affair LPPOM MUI (2011 – 2020), Direktur Operasional, membawahi bidang Human Capital, General Affair, Information and Communication Technology dan Corporate Affair LPPOM MUI (2020 – 2022); Pelatihan ISO 17065, ISO 17067, dan ISO 17024; Lead pengembangan CEROL dan ERP; diangkat sebagai Direktur Strategi and Operasional, membawahi bidang Human Capital, Strategic Management Office (SMO), Laboratorium LPPOM MUI, dan Operations Department LPPOM MUI pada 2022; diangkat sebagai Direktur Opersional pada tahun 2020-2022.
+                            </p>
+                          </div>
+
+                        
+                    
+                        </div>
+                    </div>
+                    <div data-aos="fade-right"
+                     class="card rounded-4 shadow-lg p-4">
+                        <div class="row g-4 align-items-center">
+                          
+                          <!-- Photo -->
+                          <div class="col-md-4 text-center">
+                            <img src="asset/image/BOD-01.webp" alt="Person Photo" class="rounded-circle border border-3 border-secondary img-fluid" style="width: 180px; height: 180px; object-fit: cover;">
+                          </div>
+                          
+                          <!-- Info -->
+                          <div class="col-md-8">
+                            <h4 class="fw-bold">Dr. Ir. Muslich, M.Si</h4>
+                            <h6 class="text-muted mb-3">Direktur Kemitraan dan Pelayanan Audit Halal</h6>
+                            <p class="text-justify">
+                                Mendapatkan gelar Sarjana (S1), Pascasarjana (S2), dan Doktor (S3) di IPB University; sebelumnya bekerja pada beberapa perusahaan swasta (1991 – 1993), Manajer Pusat Pengembangan Pertanian dan Agroindustri PT TELKOM WITEL IX Jayapura (1993 – 1994), Kepala Bidang Sistem Jaminan Halal LPPOM MUI (2010 – 2015), Kepala Bidang QA dan Standard LPPOM MUI (2015 – 2019), Senior Advisor LPPOM MUI (2020), Ketua Tim pengembangan persyaratan sertifikasi halal MUI HAS 23 000 (2010 – 2011); aktif sebagai Dosen Departemen Teknik Industri Pertanian, Fakultas Teknologi Pertanian, IPB University (sejak 1994), Auditor Halal (sejak 1995), Anggota Panitia Teknis perumusan standar Sistem Manajemen Halal (SNI 99 001), Rumah Potong Unggas Halal (SNI 99 002), Rumah Potong Ruminasia Halal (SNI 99 003), Pangan Halal (SNI 99 004) Badan Standarisasi Nasional (sejak 2015), Ketua Tim pengembangan perangkat uji kompetensi SKKNI Penyelia Halal & SKKNI Auditor Halal (sejak 2017), Asesor Kompetensi Badan Nasional Sertifikasi Profesi (BNSP) (sejak 2015), Asesor Kompetensi Bidang Keamanan Pangan, Lembaga Sertifikasi Profesi (LSP) Jaminan Mutu dan Keamanan Pangan (JMKP) (sejak 2015); diangkat menjadi Direktur Pelayanan Audit Halal pada tahun 2020-2022.
+                            </p>
+                          </div>
+                    
+                        </div>
+                    </div>
+                    <div data-aos="fade-left"
+                     class="card rounded-4 shadow-lg p-4">
+                        <div class="row g-4 align-items-center">
+                          
+                          <!-- Photo -->
+                          <div class="col-md-4 text-center">
+                            <img src="asset/image/BOD-04.webp" alt="Person Photo" class="rounded-circle border border-3 border-secondary img-fluid" style="width: 180px; height: 180px; object-fit: cover;">
+                          </div>
+                          
+                          <!-- Info -->
+                          <div class="col-md-8">
+                            <h4 class="fw-bold">H. Misbahul Ulum, M.Si</h4>
+                            <h6 class="text-muted mb-3">Direktur Keuangan LPPOM MUI</h6>
+                            <p class="text-justify">
+                                Meraih gelar Pascasarjana (S2) Program Pascasarjana di Universitas Indonesia; sebelumnya Sekretaris Duta Besar Republik Indonesia di Doha, Qatar (2007), Head of Corporate Affairs Bank Mega Syariah (2010-2016), Anggota Komite Audit dan Komite Pemantauan Resiko Bank Mega Syariah (2015-2020), Wakil Sekretaris Jenderal Majelis Ulama Indonesia (2015 – 2020), Sekretaris Dewan Pengawas LPPOM MUI (2015 – 2020); diangkat menjadi direktur keuangan pada tahun 2020
+                            </p>
+                          </div>
+                          
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image-divider">
+          <img src="asset/image/wavesGreen.svg" alt="divider" width="100%">
+        </div>
+    </section>
+    <!--DIREKTUR end-->
+
+    <!--AUDITOR start-->
+    <section id="auditor">
+     <img data-aos="fade-left" id="foto-auditor" src="asset/image/fotoauditor.png" alt="fotoauditor">
+      <img data-aos="fade-left" id="foto-auditor-3d" src="asset/image/icons/audit.png" alt="iconaudit">
+      <div class="image-divider">
+        <img src="asset/image/wavesGreen.svg" alt="divider" width="100%">
+      </div>
+      <div class="auditor">
+        <h2
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        >Profil Auditor</h2>
+      </div>
+      <div class="text-auditor container-fluid" data-aos="fade-right">
+        <p>Dalam mendukung proses pemeriksaan halal, LPH LPPOM didukung lebih dari 1000 auditor yang profesional dan kompeten di bidangnya. Tersebar di 34 provinsi di seluruh Indonesia dan 4 kantor perwakilan di luar negeri, China, Korea dan Taiwan. Auditor LPH LPPOM berasal dari berbagai disiplin ilmu dengan jenjang pendidikan, baik Sarjana, Master, Dokter maupun Profesor. Dan menguasai tidak kurang dari 8 (delapan) cakupan pemeriksaan.</p>
+      </div>
+    </section> 
+    <!--AUDITOR end-->
+
+    <!--IMAGE AUDITOR start-->
+    <section class="data-auditor">
+      <div class="images-auditor row">
+        <div class="col-lg-6 col-xs-12 img-small d-flex flex-column align-items-center">
+          <img src="asset/image/data1.webp" alt="dataauditor" class="img-fluid mt-4">
+          <img src="asset/image/data2.webp" alt="dataauditor" class="img-fluid">
+        </div>
+        <div class="col-lg-6 col-xs-12 img-small d-flex flex-column align-items-center" >
+          <img src="asset/image/data3.webp" alt="dataauditor" class="img-fluid mt-4">
+          <img src="asset/image/data4.webp" alt="dataauditor" class="img-fluid">
+        </div>
+        <div class="col-12 d-flex flex-column align-items-center img5">
+          <img src="asset/image/data5.webp" alt="data5" class="img-fluid ">
+        </div>
+      </div>
+    </section>
+    <!--IMAGE AUDITOR end-->
+    
+    <!--FOOTER-->
+    <footer class="footer-halal">
+      <div class="footer-container row">
+        <!-- Logo Section -->
+        <div class="footer-left col-4">
+          <img src="asset/image/logo/logo3.png" alt="Halal Logo"  width="200px">
+        </div>
+    
+        <!-- Contact Section -->
+        <div class="footer-contact col-4">
+          <br>
+          <h6>Contact Us</h6>
+          <p>klikflimty@gmail.com<br>0852 9889 8644</p>
+        </div>
+    
+        <!-- Social Media Section -->
+        <div class="footer-social col-4">
+          <br>
+          <h6>Follow Us</h6>
+          <div class="social-icons">
+            <a href="#"><img src="asset/image/icons/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="asset/image/icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="asset/image/icons/x.png" alt="Twitter/X"></a>
+            <a href="#"><img src="asset/image/icons/tiktok.png" alt="TikTok"></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <strong>PT ANUGRAH INOVASI MAKMUR INDONESIA</strong><br>
+        Jalan Boulevard Raya, Cengkareng Timur, DKI Jakarta, 11730 – Indonesia
+      </div>
+    </footer>
+    <!--FOOTER-->
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" style="text-decoration: none;" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!--Scroll Script-->
+    <script>
+        const scrollUp = () =>{
+            const scrollUp = document.getElementById('scroll-up')
+            //when the scroll is higher than 350 viewpoint height, add the show-scroll class to a tag with the scroll up class
+            this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                                : scrollUp.classList.remove('show-scroll')
+        }
+        window.addEventListener('scroll', scrollUp)
+    </script>
+      
+</body>
+</html>
